@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(30, 255, 0, 0.068);
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(0, 207, 10);
+  margin-bottom: 2rem;
+}
+nav h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+nav button {
+  position: absolute;
+  right: 5%;
+  bottom: -40%;
+  border: 1px solid white;
+  background: rgb(0, 207, 10);
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+section {
+  width: 60%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.938);
+  padding: 1.5rem;
+  position: absolute;
+  top: 20%;
+}
+
+main div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  justify-content: space-between;
+  border-left: 3px solid rgb(0, 207, 10);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.137);
+  position: relative;
+  font-size: 1.4rem;
+}
+
+main div button {
+  position: absolute;
+  right: 0.3%;
+  top: 4%;
+  background: transparent;
+  border: none;
+  width: 1rem;
+  cursor: pointer;
+}
+
+body img {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  filter: brightness(70%);
+  z-index: -1;
+  top: 0;
+}
+
+form {
+  transition: ease 0.4s;
+  position: absolute;
+  top: -200%;
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 12px;
+  padding: 1.3rem;
+  border: 1px solid white;
+  z-index: 999;
+  color: white;
+  box-shadow: 0px 0px 10px 10px rgba(60, 255, 0, 0.733);
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+form div:first-of-type {
+  position: relative;
+}
+
+form input:first-of-type {
+    background: none;
+    border: 1px solid white;
+    padding: .4rem;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form input:last-of-type {
+    padding: .45rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form input:last-of-type:hover {
+    background-color: rgba(0, 207, 10, 0.349);
+}
+
+form button {
+  background-color: transparent;
+  height: 2rem;
+  width: 2rem;
+  font-size: 2rem;
+  color: red;
+  position: absolute;
+  top: -88%;
+  right: -9%;
+  border: none;
+  cursor: pointer;
+}
